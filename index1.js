@@ -23,7 +23,7 @@ class CuentaCorriente
     {
         //cuentaCorriente2.saldo = cuentaCorriente2.saldo+valor; MODO NORMAL
         //this.saldo = this.saldo+valor; MODO EXTENSO
-        this.saldo = this.saldo + valor; //MODO ABREVIADO
+        this.saldo += valor; //MODO ABREVIADO
     }
 }
 
@@ -55,5 +55,9 @@ console.log(cliente2);
 console.log(cuentaCorriente2);*/
 
 console.log(cuentaCorriente2.saldo);
-cuentaCorriente2.saldo = cuentaCorriente2.saldo + 100;
+cuentaCorriente2.depositoEnCuenta(100);
+console.log(cuentaCorriente2.saldo);
+cuentaCorriente2.depositoEnCuenta(200);
+console.log(cuentaCorriente2.saldo);
+cuentaCorriente2.depositoEnCuenta(500);
 console.log(cuentaCorriente2.saldo);
