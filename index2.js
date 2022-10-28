@@ -14,6 +14,8 @@ class CuentaCorriente {
 
     constructor() {
         this.saldo = 0;
+        this.numero = "";
+        this.agencia = "";
     }
 
     depositoEnCuenta(valor) {
