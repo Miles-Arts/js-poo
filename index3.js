@@ -35,5 +35,5 @@ cuentaDeLeonardo.depositoEnCuenta(100);
 console.log(cuentaDeLeonardo);
 cuentaDeLeonardo.retirarDeCuenta(100);
 console.log(cuentaDeLeonardo);
-cuentaDeLeonardo.depositoEnCuenta(-100);
-console.log(cuentaDeLeonardo);
+/*cuentaDeLeonardo.depositoEnCuenta(-100);
+console.log(cuentaDeLeonardo);*/
