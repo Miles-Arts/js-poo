@@ -1,6 +1,6 @@
 //BANCO POPULAR //Definición de clases
 export class CuentaCorriente {
-    
+
     cliente;
     numero;
     agencia;
@@ -20,8 +20,8 @@ export class CuentaCorriente {
     }
 
     retirarDeCuenta(valor) {
-        //this.saldo = this.saldo - valor;
-        if (valor <= this.#saldo) // if para no generar retiro cuando hay menos saldo
+
+        if (valor <= this.#saldo)
             this.#saldo -= valor;
         return this.#saldo;
     }
