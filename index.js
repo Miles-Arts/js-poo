@@ -1,57 +1,27 @@
-/*const nombreCliente = "Anita";
-const cedulacliente = "123456";
-const numeroCuenta = "09876";
-const saldoCuenta = "1000";*/
-//console.log(nombreCliente);
+//BANCO POPULAR //Definición de clases
 
-//BANCO POPULAR 
+import {CuentaCorriente} from "./cuentaCorriente.js";
+//import {cliente} from "./cliente.js";
 
-class Cliente {
-    nombreCliente;
-    cedulaCliente;
-    rutCliente;
-}
+const cuentaDeLeonardo = new CuentaCorriente();
 
-class CuentaCorriente {
-    numero;
-    saldo;
-    agencia;
+let saldo = cuentaDeLeonardo.verSaldo();
+console.log(`El saldo actual es: ${saldo}`);
 
-    depositoEnCuenta(valor) {
-        //cuentaCorriente2.saldo = cuentaCorriente2.saldo+valor; MODO NORMAL
-        //this.saldo = this.saldo+valor; MODO EXTENSO
-        this.saldo = this.saldo + valor; //MODO ABREVIADO
-    }
-}
+//cuentaDeLeonardo.#saldo = 10;
 
-//new cliente();
+//cuentaDeLeonardo.depositoEnCuenta(100); MODO LARGO
+//saldo = cuentaDeLeonardo.verSaldo(); MODO LARGO
 
-const cliente1 = new Cliente();
-cliente1.nombreCliente = "Veronica";
-cliente1.cedulaCliente = "123456";
-cliente1.rutCliente = "123456";
+saldo = cuentaDeLeonardo.depositoEnCuenta(100); //Modo corto
+console.log(`El saldo actual es: ${saldo}`);
 
-const cuentaCorriente1 = new CuentaCorriente();
-cuentaCorriente1.numero = "09876";
-cuentaCorriente1.saldo = 5000;
-cuentaCorriente1.agencia = "1001"
-
-const cliente2 = new Cliente();
-cliente2.nombreCliente = "Catalina";
-cliente2.cedulaCliente = "223344";
-cliente2.rutCliente = "223344";
-
-const cuentaCorriente2 = new CuentaCorriente();
-cuentaCorriente2.numero = "556677";
-cuentaCorriente2.saldo = 8000;
-cuentaCorriente2.agencia = "1002";
-
-
-/*console.log(cliente1);
-console.log(cuentaCorriente1);
-console.log(cliente2);
-console.log(cuentaCorriente2);*/
-
-console.log(cuentaCorriente2.saldo);
-cuentaCorriente2.saldo = cuentaCorriente2.saldo + 100;
-console.log(cuentaCorriente2.saldo);
+//console.log(cuentaDeLeonardo);
+saldo = cuentaDeLeonardo.retirarDeCuenta(100);
+//saldo = cuentaDeLeonardo.verSaldo();
+console.log(`El saldo actual es: ${saldo}`);
+//console.log(cuentaDeLeonardo);
+saldo = cuentaDeLeonardo.depositoEnCuenta(10);
+//saldo = cuentaDeLeonardo.verSaldo();
+console.log(`El saldo actual es: ${saldo}`);
+//console.log(cuentaDeLeonardo);

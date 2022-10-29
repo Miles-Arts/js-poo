@@ -1,0 +1,21 @@
+{
+  "name": "cuentasbancopopular",
+  "version": "1.0.0",
+  "description": "Gestión de Cuentas Corrientes del Banco Popular",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Miles-Arts/js-poo.git"
+  },
+  "author": "Milton Figueredo",
+  "license": "ISC",
+  "type":"module",
+  "bugs": {
+    "url": "https://github.com/Miles-Arts/js-poo/issues"
+  },
+  "homepage": "https://github.com/Miles-Arts/js-poo#readme"
+
+}
