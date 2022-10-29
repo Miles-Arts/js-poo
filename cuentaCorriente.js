@@ -29,4 +29,9 @@ export class CuentaCorriente {
     verSaldo() {
         return this.#saldo;
     }
+
+    transferirParaCuenta(valor, cuentaDestino) {
+        this.retirarDeCuenta(valor);
+        cuentaDestino.depositoEnCuenta(valor);
+    }
 }
