@@ -1,8 +1,10 @@
 //BANCO POPULAR //Definición de clases
 
+import {Cliente} from "./cliente";
 import {CuentaCorriente} from "./cuentaCorriente.js";
 //import {cliente} from "./cliente.js";
 
+const Cliente = new Cliente();
 const cuentaDeLeonardo = new CuentaCorriente();
 
 let saldo = cuentaDeLeonardo.verSaldo();
@@ -13,7 +15,7 @@ console.log(`El saldo actual es: ${saldo}`);
 //cuentaDeLeonardo.depositoEnCuenta(100); MODO LARGO
 //saldo = cuentaDeLeonardo.verSaldo(); MODO LARGO
 
-saldo = cuentaDeLeonardo.depositoEnCuenta(100); //Modo corto
+saldo = cuentaDeLeonardo.depositoEnCuenta(160); //Modo corto
 console.log(`El saldo actual es: ${saldo}`);
 
 //console.log(cuentaDeLeonardo);

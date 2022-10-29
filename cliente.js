@@ -1,8 +1,6 @@
 //BANCO POPULAR //Definición de clases
 
-export
-
-class Cliente {
+export class Cliente {
     nombreCliente;
     cedulaCliente;
     rutCliente;

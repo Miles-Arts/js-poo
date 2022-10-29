@@ -1,15 +1,16 @@
 //BANCO POPULAR //Definición de clases
-export 
-
-class CuentaCorriente {
+export class CuentaCorriente {
+    
+    cliente;
     numero;
-    #saldo;
     agencia;
+    #saldo;
 
     constructor() {
+        this.cliente = null;
         this.numero = "";
-        this.#saldo = 0;
         this.agencia = "";
+        this.#saldo = 0;
     }
 
     depositoEnCuenta(valor) {
