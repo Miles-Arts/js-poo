@@ -32,7 +32,6 @@ const cuentaDeMaria = new CuentaCorriente();
 console.log(cuentaDeMaria.cliente);
 
 
-
 /*
 const saldoMaria = cuentaDeMaria.verSaldo();
 console.log(`El saldo actual (cuentaMaria) ${saldoMaria}`);
