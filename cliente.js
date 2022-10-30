@@ -5,7 +5,7 @@ export class Cliente {
     cedulaCliente;
     rutCliente;
 
-    contructor (nombreCliente, cedulaCliente, rutCliente) {
+    contructor(nombreCliente, cedulaCliente, rutCliente) {
         this.nombreCliente = nombreCliente;
         this.cedulaCliente = cedulaCliente;
         this.rutCliente = rutCliente;

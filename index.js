@@ -3,37 +3,32 @@
 import { Cliente } from "./cliente.js";
 import { CuentaCorriente } from "./cuentaCorriente.js";
 
-const cliente = new Cliente();
-    cliente.nombreCliente = "Leonardo";
-    cliente.cedulaCliente = "12345";
-    cliente.rutCliente = "123456";
+const cliente = new Cliente('Leonardo','13804050','123224');
+const cliente2 = new Cliente('María','16979808','8989');
+
+console.log(cliente);
+console.log(cliente2);
 
 const cuentaDeLeonardo = new CuentaCorriente();
-    cuentaDeLeonardo.numero = "1";
-    cuentaDeLeonardo.agencia = "001";
-    cuentaDeLeonardo.cliente = cliente;
+cuentaDeLeonardo.numero = "1";
+cuentaDeLeonardo.agencia = "001";
+cuentaDeLeonardo.cliente = cliente;
 
-let saldo = cuentaDeLeonardo.verSaldo();
+//let saldo = cuentaDeLeonardo.verSaldo();
 
-saldo = cuentaDeLeonardo.depositoEnCuenta(150);
-console.log(`El saldo actual (cuentaLeonardo) ${saldo}`);
-
-const cliente2 = new Cliente();
-    cliente2.nombreCliente = "María";
-    cliente2.cedulaCliente = "98765";
-    cliente2.rutCliente = "987654";
+//console.log(cliente);
+//saldo = cuentaDeLeonardo.depositoEnCuenta(150);
 
 const cuentaDeMaria = new CuentaCorriente();
-    cuentaDeMaria.numero = "2";
-    cuentaDeMaria.agencia = "002";
-    cuentaDeMaria.cliente = cliente2;
-
+cuentaDeMaria.numero = "2";
+cuentaDeMaria.agencia = "002";
+cuentaDeMaria.cliente = cliente2;
 
 //cuentaDeLeonardo.transferirParaCuenta(100, cuentaDeMaria);
-console.log(cuentaDeMaria.cliente);
+//console.log(cuentaDeMaria.cliente);
 
-cuentaDeMaria.cliente = 0;
-console.log(cuentaDeMaria.cliente);
+//cuentaDeMaria.cliente = 0;
+//console.log(cuentaDeMaria.cliente);
 
 /*
 const saldoMaria = cuentaDeMaria.verSaldo();

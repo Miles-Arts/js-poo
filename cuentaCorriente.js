@@ -17,7 +17,8 @@ export class CuentaCorriente {
         return this.#cliente;
     }
 
-    constructor() {
+    constructor(cliente , numero, agencia) {
+        this.Cliente(cliente);
         this.#cliente = null;
         this.numero = "";
         this.agencia = "";
