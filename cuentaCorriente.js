@@ -7,6 +7,7 @@ export class CuentaCorriente {
     numero;
     agencia;
     #saldo;
+    static cantidadCuentas = 0; //Atributo estatiuco que puede aumentar
 
     set cliente(valor) {
         if ( valor instanceof Cliente)
@@ -22,6 +23,7 @@ export class CuentaCorriente {
         this.numero = numero;
         this.agencia = agencia;
         this.#saldo = 0;
+        CuentaCorriente.cantidadCuentas++;
     }
 
     depositoEnCuenta(valor) {
