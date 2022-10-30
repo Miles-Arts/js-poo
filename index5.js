@@ -13,14 +13,16 @@ cuentaDeLeonardo.numero = "1";
 cuentaDeLeonardo.agencia = "001";
 cuentaDeLeonardo.cliente = cliente;
 
-
+//console.log(cuentaDeLeonardo);
 
 let saldo = cuentaDeLeonardo.verSaldo();
-
+//console.log(`El saldo actual (cuentaDeLeonardo) ${saldo}`);
 
 saldo = cuentaDeLeonardo.depositoEnCuenta(150);
 console.log(`El saldo actual (cuentaLeonardo) ${saldo}`);
 
+//---------NUEVA CUENTA---------------------
+//console.log(" \n \n --Nuevo cliente-- \n");
 
 const cliente2 = new Cliente();
 cliente2.nombreCliente = "María";
@@ -32,9 +34,9 @@ cuentaDeMaria.numero = "2";
 cuentaDeMaria.agencia = "002";
 cuentaDeMaria.cliente = cliente2;
 
+//console.log(cuentaDeMaria);
 
 cuentaDeLeonardo.transferirParaCuenta(100, cuentaDeMaria);
-console.log("cuenta de maria " , cuentaDeMaria);
 
 const saldoMaria = cuentaDeMaria.verSaldo();
 console.log(`El saldo actual (cuentaMaria) ${saldoMaria}`);

@@ -31,6 +31,7 @@ export class CuentaCorriente {
     }
 
     transferirParaCuenta(valor, cuentaDestino) {
+        //cuentaDestino.ciudad = "Lima"; // SE PUDE AÑADIR UN ATRIBUTO PERO NO ES BUENA PRACTICA
         this.retirarDeCuenta(valor);
         cuentaDestino.depositoEnCuenta(valor);
     }
