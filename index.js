@@ -9,20 +9,15 @@ const cliente2 = new Cliente('María','16979808','8989');
 console.log(cliente);
 console.log(cliente2);
 
-const cuentaDeLeonardo = new CuentaCorriente();
-cuentaDeLeonardo.numero = "1";
-cuentaDeLeonardo.agencia = "001";
-cuentaDeLeonardo.cliente = cliente;
+const cuentaDeLeonardo = new CuentaCorriente(cliente, "1", "001");
 
 //let saldo = cuentaDeLeonardo.verSaldo();
 
 //console.log(cliente);
 //saldo = cuentaDeLeonardo.depositoEnCuenta(150);
 
-const cuentaDeMaria = new CuentaCorriente();
-cuentaDeMaria.numero = "2";
-cuentaDeMaria.agencia = "002";
-cuentaDeMaria.cliente = cliente2;
+const cuentaDeMaria = new CuentaCorriente(cliente2, "2", "002");
+
 
 //cuentaDeLeonardo.transferirParaCuenta(100, cuentaDeMaria);
 //console.log(cuentaDeMaria.cliente);
