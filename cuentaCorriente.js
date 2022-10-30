@@ -1,4 +1,6 @@
 //BANCO POPULAR //Definición de clases
+import { Cliente } from "./cliente.js";
+
 export class CuentaCorriente {
 
     #cliente;
@@ -7,7 +9,8 @@ export class CuentaCorriente {
     #saldo;
 
     set cliente(valor) {
-        this.#cliente = valor;
+        if ( valor instanceof Cliente)
+                this.#cliente = valor;
     }
 
     get cliente() {
