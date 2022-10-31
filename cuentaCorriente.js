@@ -10,15 +10,15 @@ export class CuentaCorriente {
     static cantidadCuentas = 0; //Atributo estatiuco que puede aumentar
 
     set cliente(valor) {
-        if ( valor instanceof Cliente)
-                this.#cliente = valor;
+        if (valor instanceof Cliente)
+            this.#cliente = valor;
     }
 
     get cliente() {
         return this.#cliente;
     }
 
-    constructor(cliente , numero, agencia) {
+    constructor(cliente, numero, agencia) {
         this.cliente = cliente;
         this.numero = numero;
         this.agencia = agencia;
