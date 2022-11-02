@@ -1,16 +1,15 @@
 //BANCO POPULAR //Definición de clases
 import { Cliente } from "./cliente.js";
+import { Cuenta } from "./cuenta.js";
 
-export class CuentaCorriente {
+export class CuentaCorriente extends Cuenta {
 
-    #cliente;
-    numero;
-    agencia;
-    #saldo;
     static cantidadCuentas = 0;
 
     constructor(cliente, numero, agencia) {
 
+        super(cliente, numero, agencia, 0);
         CuentaCorriente.cantidadCuentas++;
+
     }
 }
