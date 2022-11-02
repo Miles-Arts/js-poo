@@ -12,4 +12,11 @@ export class CuentaCorriente extends Cuenta {
         CuentaCorriente.cantidadCuentas++;
 
     }
+
+    prueba() {
+        
+        //super.prueba();
+        console.log();
+
+    }
 }
