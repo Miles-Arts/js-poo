@@ -15,8 +15,8 @@ export class CuentaCorriente extends Cuenta {
 
     prueba() {
         
-        //super.prueba();
-        console.log();
-
+        super.prueba();
+        console.log("Método hijo");
+        
     }
 }
