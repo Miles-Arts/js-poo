@@ -13,10 +13,11 @@ export class CuentaCorriente extends Cuenta {
 
     }
 
-    prueba() {
-        
-        super.prueba();
-        console.log("Método hijo");
-        
+
+    retirarDeCuenta(valor) {
+
+        valor = valor * 1.05;
+        super.retirarDeCuenta(valor);
+
     }
 }
