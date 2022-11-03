@@ -26,12 +26,14 @@ export class Cuenta {
         return this.#saldo;
     }
 
-    retirarDeCuenta(valor, comision) {
-        /*if (this.tipo == "Corriente")*/
-            valor = valor * (1 + comision / 100);
+    retirarDeCuenta(valor) {
+        
+        _retirarDeCuenta(valor, 0);
+    }
 
-        /*else if (this.tipo == "Ahorro")
-            valor = valor * 1.02;*/
+    _retirarDeCuenta(valor, comision) {
+
+        valor = valor * (1 + comision / 100);
 
         if (valor <= this.#saldo)
             this.#saldo -= valor;
