@@ -13,11 +13,9 @@ export class CuentaCorriente extends Cuenta {
 
     }
 
-
     retirarDeCuenta(valor) {
 
-        valor = valor * 1.05;
-        super.retirarDeCuenta(valor);
+        super.retirarDeCuenta(valor,5);
 
     }
 }
