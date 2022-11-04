@@ -21,7 +21,7 @@ cuentaNominaLeonardo.depositoEnCuenta(150);
 
 console.log(cuentaNominaLeonardo.verSaldo());
 
-cuentaNominaLeonardo._retirarDeCuenta(50);
+cuentaNominaLeonardo.retirarDeCuenta(50);
 
 console.log(cuentaNominaLeonardo.verSaldo());
 

@@ -8,4 +8,10 @@ export class CuentaNomina extends Cuenta {
         super(cliente, numero, agencia, saldo);
 
     }
+
+    retirarDeCuenta(valor) {
+
+        super._retirarDeCuenta(valor, 1);
+
+    }
 }
