@@ -34,8 +34,8 @@ export class Cuenta {
     }
 
     retirarDeCuenta(valor) {
-
-        _retirarDeCuenta(valor, 0);
+       
+        this._retirarDeCuenta(valor, 0);
     }
 
     _retirarDeCuenta(valor, comision) {
