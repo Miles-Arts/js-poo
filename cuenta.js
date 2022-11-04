@@ -6,6 +6,10 @@ export class Cuenta {
 
     constructor(cliente, numero, agencia, saldo) {
 
+        if (this.constructor == Cuenta) {
+            console.log("No se debe instanciar objetos de la clase cuenta");
+        }
+
         this.numero = numero;
         this.agencia = agencia;
         this.#cliente = cliente;
@@ -28,7 +32,7 @@ export class Cuenta {
     }
 
     retirarDeCuenta(valor) {
-        
+
         _retirarDeCuenta(valor, 0);
     }
 
@@ -55,6 +59,5 @@ export class Cuenta {
     prueba() {
         console.log("Método padre");
     }
-
 }
 
