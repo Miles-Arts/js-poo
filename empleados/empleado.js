@@ -3,13 +3,27 @@ export class Empleado {
     #nombre;
     #cedula;
     #salario
-
+    #clave;
     constructor(nombre, cedula, salario) {
 
         this.#nombre = nombre;
         this.#cedula = cedula;
         this.#salario = salario;
+        this.#clave = "";
 
+    }
+
+
+    asignarClave(clave) {
+
+        this.#clave = clave;
+    
+    }
+
+    get clave() {
+
+        return this.#clave;
+    
     }
 
     verBonificacion() {
