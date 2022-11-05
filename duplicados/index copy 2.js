@@ -1,5 +1,5 @@
 //BANCO POPULAR //Definición de clases
-import { Cliente } from "./cliente.js";
+import { Cliente } from "../cliente.js";
 import { CuentaCorriente } from "./cuentaCorriente.js";
 import { CuentaAhorro } from "./cuentaAhorro.js";
 import { Cuenta } from "./cuenta.js";

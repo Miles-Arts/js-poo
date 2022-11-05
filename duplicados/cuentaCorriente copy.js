@@ -1,5 +1,5 @@
 //BANCO POPULAR //Definición de clases
-import { Cliente } from "./cliente.js";
+import { Cliente } from "../cliente.js";
 
 export class CuentaCorriente {
 
