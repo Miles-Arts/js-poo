@@ -24,7 +24,28 @@ cuentaNominaLeonardo.retirarDeCuenta(50);
 
 console.log(cuentaNominaLeonardo.verSaldo());
 
+/*console.log(cuentaDeLeonardo);
+cuentaDeLeonardo.depositoEnCuenta(150);
+console.log(cuentaDeLeonardo.verSaldo());
+cuentaDeLeonardo.retirarDeCuenta(70);
+console.log(cuentaDeLeonardo.verSaldo());
 
+console.log("-----------");
+
+console.log(cuentaAhorroLeonardo);
+console.log(cuentaAhorroLeonardo.verSaldo());
+cuentaAhorroLeonardo.depositoEnCuenta(200);
+console.log(cuentaAhorroLeonardo.verSaldo());
+cuentaAhorroLeonardo.retirarDeCuenta(120);
+console.log(cuentaAhorroLeonardo.verSaldo());*/
+
+//const cuentaSimple = new Cuenta(cliente, "003", "004", 100);
+
+//console.log(cuentaAhorroLeonardo);
+
+//cuentaSimple = cuentaSimple.constructor();
+
+//console.log (cuentaSimple);
 
 
 
