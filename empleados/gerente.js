@@ -9,8 +9,8 @@ export class Gerente extends Empleado {
 
     verBonificacion() {
 
-       const bono = 5;
-       return super._verBonificacion(bono);
+        const bono = 5;
+        return super._verBonificacion(bono);
 
     }
 

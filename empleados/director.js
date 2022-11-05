@@ -11,7 +11,7 @@ export class Director extends Empleado {
 
         const bono = 10;
         return super._verBonificacion(bono);
- 
-     }
+
+    }
 
 }
