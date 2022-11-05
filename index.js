@@ -20,3 +20,4 @@ console.log(empleado.verBonificacion());
 console.log(gerente.verBonificacion());
 console.log(director.verBonificacion());
 
+SistemaAutenticacion.login(empleado, "12345");
