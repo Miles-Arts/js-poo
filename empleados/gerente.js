@@ -1,3 +1,4 @@
+//BANCO POPULAR //
 import { Empleado } from "./empleado.js";
 
 export class Gerente extends Empleado {

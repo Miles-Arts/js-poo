@@ -1,9 +1,11 @@
+//BANCO POPULAR //
 export class Empleado {
 
     #nombre;
     #cedula;
     #salario
     #clave;
+
     constructor(nombre, cedula, salario) {
 
         this.#nombre = nombre;
@@ -13,17 +15,17 @@ export class Empleado {
 
     }
 
-
     asignarClave(clave) {
 
         this.#clave = clave;
-    
+
     }
 
-    get clave() {
+    autenticable(clave) {
 
-        return this.#clave;
-    
+        return clave == this.#clave;
+        //return this.#clave;
+
     }
 
     verBonificacion() {

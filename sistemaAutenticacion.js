@@ -1,14 +1,11 @@
+//BANCO POPULAR //
 export class SistemaAutenticacion {
 
-    static login(empleado, clave) {
+    static login(usuario, clave) {
 
-        //console.log(clave);
-        //console.log(empleado.clave);
+        return usuario.autenticable(clave);
 
-        return empleado.clave == clave;
-        //if (empleado.clave == clave)
-         //   return true;
-       // return false;
+            //return usuario.clave == clave;
 
     }
 }
